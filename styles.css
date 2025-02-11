@@ -1,0 +1,680 @@
+/* General Styles */
+body{
+    margin: 0;
+    padding: 0;
+    background: #F7F7F7;
+}
+h1, h2, h3, h4, h5, h6, a {
+    font-family: "Quicksand", serif;
+    margin: 0;
+}
+p{
+    font-family: "Raleway", serif;
+    margin: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+
+/* Navbar */
+.nav {
+    padding: 20px 0;
+    background-color: #f9f5ed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar .logo h3{
+    font-size: 32px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links li:nth-child(1) a{
+    color: #FEA301;
+    font-weight: bold;
+}
+.nav-links li:nth-child(2) a{
+    color: #01ACFD;
+    font-size: medium;
+}
+.nav-links li:nth-child(3) a{
+    color: #05D4DF;
+    font-size: medium;
+}
+.nav-links li:nth-child(4) a{
+    color: #5D58EF;
+    font-size: medium;
+}
+.contact-btn {
+    background: #FEA301;
+    border: none;
+    padding: 10px 60.5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 12px;
+    color: #fff;
+}
+.menu-bar {
+    display: none;
+}
+
+/*  Marquee  */
+.marq{
+    color: #9c670c;
+    padding: 110px 0 10px;
+    font-size: 25px;
+    background-color: #f9e0e054;
+}
+
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    width: 1160px;
+    margin: 0 auto;
+}
+.banner-content {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.banner-content h1{
+   font-size: 56px;
+   font-weight: bold; 
+   line-height: 61px;
+}
+.banner-image{
+    width: 40%;
+}
+
+.banner-content h1 span:nth-child(1) {
+    color: orange;
+}
+.banner-content h1 span:nth-child(2) {
+    color: black;
+}
+.banner-content h1 span:nth-child(3) {
+    color: #01ACFD;
+}
+.banner-content h6{
+    font-size: 20px;
+    font-weight: 400; 
+    color: black;
+}
+.banner-content button{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 47px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.banner-content button:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+
+
+
+/* Standard Curriculum */
+.curriculum {
+    text-align: center;
+    background-image: url('assets/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+.stories h2,
+.curriculum h2{
+    font-size: 46px;
+    line-height: 57.5px;
+    font-weight: bold;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 28px;
+    padding: 80px 0;
+    width: 1160px;
+    margin: 0 auto;
+}
+.card {
+    padding: 52px 40px;
+    border-radius: 18.86px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card h3{
+    font-size: 24.52px;
+    font-weight: bold;
+    line-height: 30.7px;
+}
+.card p{
+    font-size: 15.09px;
+    line-height: 28.3px;
+    font-weight: 400;
+    color: #808080;
+}
+.card a{
+    font-size: 15.09px;
+    line-height: 28.3px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pic{
+    width: 136.76px;
+    height: 136.76px;
+    margin: 0 auto;
+}
+.cards .card:nth-child(1){
+    background: linear-gradient(to top, #FFFFFF 50%, #DEF5FF 100%);
+    border: 0.8px solid #DEF5FF;
+}
+.cards .card:nth-child(1) a{
+    color: #64C8FF;;
+}
+.cards .card:nth-child(2){
+    background: linear-gradient(to top, #FFFFFF 50%, #FFF4DC 100%);
+    border: 0.8px solid #FFF4DC;
+}
+.cards .card:nth-child(2) a{
+    color: #F0AA00;;
+}
+.cards .card:nth-child(3){
+    background: linear-gradient(to top, #FFFFFF 50%, #F2E8FF 100%);
+    border: 0.8px solid #F2E8FF;
+}
+.cards .card:nth-child(3) a{
+    color: #8700FF;;
+}
+.arrow-buttons{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.arrow-buttons .btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FEA301;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-buttons .btn a i{
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.arrow-buttons .btn:hover{
+    background-color: #f0824e;
+}
+
+
+
+/* Our Stories */
+
+.stories {
+    text-align: center;
+    position: relative; 
+    background-image: url('assets/bg.png');
+    padding: 60px 0;
+}
+
+.stories::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #FFF 20%, #FCE7BC 50%);
+    z-index: -1;
+}
+.story-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px 0;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.large-card{
+    width: 48%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.large-card .text{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    padding: 58px 38.35px 38.35px 35px ;
+    position: relative;
+}
+.large-card .text h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+    line-height: 38.3px;
+}
+.large-card .text p{
+    font-size: 15.34px;
+    font-weight: 400;
+    text-align: start;
+    line-height: 28.8px;
+}
+.large-card .text .date{
+    position: absolute;
+    top: -25px;
+    left: 40px;
+    background-color: #3CD8E8;
+    padding: 10px 20px;
+    border-radius: 47.93px;
+}
+.large-card .text .date p{
+    font-size: 15.34px;
+    font-weight: 400;
+    text-align: start;
+    line-height: 28.8px;
+    color: #ffffff;
+}
+
+
+.small-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 52%;
+}
+.scard{
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.scard .text {
+    padding: 43px 38px 38px 34px;
+    position: relative;
+}
+.text .date{
+    position: absolute;
+    top: -25px;
+    left: 40px;
+    background-color: #95B226;
+    padding: 10px 20px;
+    border-radius: 47.93px;
+}
+.text .date p{
+    font-size: 15.34px;
+    font-weight: 400;
+    text-align: start;
+    line-height: 28.8px;
+    color: #ffffff;
+}
+
+.scard .text h3{
+    font-size: 15.34px;
+    font-weight: bold;
+    text-align: start;
+    line-height: 28.8px;
+}
+
+.small-card .scard:nth-child(2) .date {
+    background-color: #5D58F0;
+}
+
+
+.stories button{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 61px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.stories button:hover{
+    background-color: transparent;
+    color: #000;
+}
+.mcard{
+    display: none;
+}
+
+
+
+/* Footer */
+footer {
+    background: #01ACFD;
+    color: white;
+    text-align: center;
+    padding: 123px 0;
+}
+.f-container{
+    width: 1070.91px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.f-container .footer-column:nth-child(1) {
+    width: 40%;
+}
+.f-container .footer-column:nth-child(2) {
+    width: 20%;
+}
+.f-container .footer-column:nth-child(3) {
+    width: 20%;
+}
+.footer-column .logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.footer-column .logo img{
+    width: 82px;
+    height: 82px;
+}
+.footer-column .logo h3{
+    font-size: 42px;
+    line-height: 39px;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 200px;
+    text-align: start;
+}
+
+.footer-column h6{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+    margin-top: 35px;
+}
+.footer-column h4{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 15px;
+}
+.footer-link {
+    list-style: none;
+    text-align: start;
+    padding: 0;
+}
+.footer-link li{
+    padding-top: 20px;
+}
+.footer-link a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 15px 0;
+}
+.social-link {
+    margin-top: 45px;
+    list-style: none;
+    text-align: start;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container{
+        width: 95%;
+    }
+    .nav {
+        border-bottom: 2px solid #FEA301;
+        padding: 10px 0; 
+    }
+    .navbar{
+        width: 90%;
+    }
+    .nav-links{
+        display: none;
+    }
+    .contact-btn{
+        display: none;
+    }
+    .navbar .logo h3{
+        display: none;
+    }
+    .navbar .logo img{
+        width: 60px;
+    }
+    .menu-bar {
+        display: block;
+        font-size: 40px;
+    }
+
+    .marq {
+        padding: 85px 0 5px;
+        font-size: 18px;
+    }
+
+    .banner {
+        flex-wrap: wrap;
+        width: 90%;
+        gap: 20px;
+        text-align: center;
+    }
+    .banner-image,
+    
+    .banner-content {
+        width: 100%;
+    }
+    .banner-image img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .banner-content{
+        order: 2;
+    }
+    .banner-image{
+        order: 1;
+    }
+    .banner-content h1{
+        font-size: 32px;
+        line-height: 40px;
+        
+    }
+    .banner-content h6{
+        font-size: 14px;
+        
+    }
+    .banner-content button{
+        font-size: 16px;
+        padding: 6px 24px;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+    .stories,
+    .curriculum {
+        padding: 40px 0 20px;
+    }
+
+    .stories h2,
+    .curriculum h2{
+    font-size: 26px;
+    line-height: 30.5px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 0;
+        width: 90%;
+    }
+   
+    .card h3{
+        font-size: 16.6px;
+        line-height: 20.8px;
+        width: 100%;
+    }
+
+    .card p{
+        font-size: 10.22px;
+        line-height: 19.2px;
+        width: 200px;
+    }
+    .card a{
+        font-size: 10.22px;
+        line-height: 19.2px;
+        width: 100%;
+    }
+    .pic{
+        width: 92.6px;
+        height: 92.6px;
+    }
+    .arrow-buttons{
+        display: none;
+    }
+
+    .story-cards{
+        padding: 20px 0;
+        width: 90%;
+    }
+    .large-card{
+        display: none;
+    }
+    .small-card{
+        width: 100%;
+    }
+    .scard .text {
+        padding: 24px;
+    }
+
+    .scard .text h3{
+        font-size: 9.13px;
+        line-height: 17.1px;
+    }
+    .text .date{
+        top: -20%;
+        left: 10%;
+        padding: 5.5px 11px;
+        border-radius: 28.54px;
+    }
+
+    .text .date p{
+        font-size: 9.13px;
+        line-height: 17.1px;
+    }
+    .mcard{
+        display: block;
+    }
+    .small-card .scard:nth-child(3) .date,
+    .small-card .scard:nth-child(4) .date {
+        background-color: #5D58F0;
+    }
+
+    .stories button{
+        font-size: 16px;
+        line-height: 30px;
+        color: #fff;
+        padding: 0px 37px;
+    }
+    footer {
+        padding: 50px 0;
+    }
+    .f-container{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .f-container .footer-column:nth-child(1),
+    .f-container .footer-column:nth-child(2),
+    .f-container .footer-column:nth-child(3) {
+        width: 100%;
+    }
+    .footer-column .logo img{
+        width: 69.23px;
+        height: 69.23px;
+    }
+    .footer-column .logo h3{
+        font-size: 35.73px;
+        line-height: 33.5px;
+    }
+    .footer-column h6{
+        font-size: 16px;
+        width: 357px;
+    }
+    .footer-column h4 {
+        font-size: 20px;
+        margin-top: 32px;
+    }
+    .footer-link {
+        margin: 0;
+    }
+
+    .footer-link li {
+        padding-top: 15px;
+    }
+    .footer-link a {
+        font-size: 16.96px;
+        padding: 0px 0;
+    }
+    .social-link {
+        margin-top: 20px;
+    }
+    
+
+}
